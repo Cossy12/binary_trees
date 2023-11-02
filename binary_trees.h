@@ -44,4 +44,13 @@ void binary_tree_postorder(const binary_tree_t *Pointer_tree, void (*func)(int))
 size_t binary_tree_height(const binary_tree_t *Pointer_tree);
 size_t binary_tree_depth(const binary_tree_t *Pointer_tree);
 
+size_t binary_tree_size(const binary_tree_t *Pointer_tree);
+size_t binary_tree_leaves(const binary_tree_t *Pointer_tree);
+size_t binary_tree_nodes(const binary_tree_t *Pointer_tree);
+int binary_tree_balance(const binary_tree_t *Pointer_tree);
+int binary_tree_is_full(const binary_tree_t *Pointer_tree);
+int binary_tree_is_perfect(const binary_tree_t *Pointer_tree);
+binary_tree_t *binary_tree_sibling(binary_tree_t *main_nd);
+binary_tree_t *binary_tree_uncle(binary_tree_t *main_nd);
 #endif
+

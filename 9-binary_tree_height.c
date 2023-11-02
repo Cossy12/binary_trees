@@ -15,7 +15,7 @@ size_t binary_tree_height(const binary_tree_t *Pointer_tree)
 
 		q = Pointer_tree->left ? 1 + binary_tree_height(Pointer_tree->left) : 0;
 		v = Pointer_tree->right ? 1 + binary_tree_height(Pointer_tree->right) : 0;
-		return ((q > r) ? q : v);
+		return ((q > v) ? q : v);
 	}
 	return (0);
 }
