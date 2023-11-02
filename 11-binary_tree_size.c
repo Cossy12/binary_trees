@@ -9,7 +9,7 @@ size_t binary_tree_size(const binary_tree_t *Pointer_tree)
 {
 	size_t vol = 0;
 
-	if (tree)
+	if (Pointer_tree)
 	{
 		vol += 1;
 		vol += binary_tree_size(Pointer_tree->left);
